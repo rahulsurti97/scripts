@@ -1,4 +1,6 @@
-# these are instructions only, do not run
+#!/bin/bash
+
+tail -n +6 fish_setup_linux.sh
 exit
 
 # on remote machine
@@ -9,7 +11,6 @@ test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --pref
 echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
 brew install hello
 brew install fish
-fish
 alias fish_prompt "echo '> '"; funcsave fish_prompt
 
 # on local maciine
